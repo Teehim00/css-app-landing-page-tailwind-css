@@ -7,7 +7,50 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#F6F6FB]">
+    <header class="p-[24px]">
+      <nav
+        class="navbar bg-white flex flex-row justify-between items-center rounded-[90px] w-full h-[80px] py-[12px] px-[80px]"
+      >
+        <div class="nav1 font-bold text-[24px]">Acme</div>
+        <div class="nav2 flex gap-[50px] w-auto h-auto py-[16px] px-[24px]">
+          <div class="nav2-1 text-[16px]">
+            <a
+              href=""
+              class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline"
+              >Home</a
+            >
+          </div>
+          <div class="nav2-2">Features</div>
+          <div class="nav2-3">Pricing</div>
+          <div class="nav2-4">Contact</div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="hero-section flex flex-col justify-center items-center text-center gap-[120px] w-auto h-auto mt-[128px]"
+    >
+      <div class="flex flex-col items-center gap-[40px]">
+        <div
+          class="hero1 bg-[#563AFF1A] text-[16px] rounded-full px-[20px] py-[8px] text-[#5E44FF]"
+        >
+          Acme Productivity App
+        </div>
+        <div class="hero2 gap-[24px] flex flex-col">
+          <h1 class="font-bold text-[80px] flex justify-center">
+            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+          </h1>
+          <h2 class="text-[24px]">
+            Streamline your workflow with our aii-in-one productivity app.
+          </h2>
+        </div>
+        <button
+          class="hero-buttom bg-[#1A1A2C] text-[16px] text-white rounded-2xl w-[187px] px-9 py-4 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring border-[#5F5F76]"
+        >
+          Start Free Trial
+        </button>
+      </div>
+    </section>
   </body>
 </html>
