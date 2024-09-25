@@ -8,40 +8,93 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[#F6F6FB]">
-    <header class="p-[24px]">
-      <nav
-        class="navbar bg-white flex flex-row justify-between items-center rounded-[90px] w-full h-[80px] py-[12px] px-[80px]"
-      >
-        <div class="nav1 font-bold text-[24px]">Acme</div>
-        <div class="nav2 flex gap-[50px] w-auto h-auto py-[16px] px-[24px]">
-          <div class="nav2-1 text-[16px]">
-            <a
-              href=""
-              class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline"
-              >Home</a
-            >
-          </div>
-          <div class="nav2-2">Features</div>
-          <div class="nav2-3">Pricing</div>
-          <div class="nav2-4">Contact</div>
+    <header class="p-[24px]">      
+      <nav class="navbar bg-white flex flex-row justify-between items-center rounded-[90px] w-full h-[80px] py-[12px] px-[80px]">        
+        <div class="nav1 font-bold text-[24px]">Acme</div> 
+        <div class="nav2 gap-[50px] w-auto h-auto py-[16px] px-[24px] md:flex hidden">          
+          <div class="nav2-1 text-[16px] hidden md:flex lg:flex ">            
+            <a href=""class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline">Home</a>          
+          </div>          
+          <div class="nav2-2">Features</div>          
+          <div class="nav2-3">Pricing</div>          
+          <div class="nav2-4">Contact</div>       
         </div>
-      </nav>
+        
+        
+        <div class="md:hidden group relative">
+        <img src="https://www.svgrepo.com/show/12219/menu.svg" class="w-[20px] md:hidden cursor-pointer"tabindex="0" >
+        <div class="nav2 bg-white invisible absolute flex flex-col gap-[50px] w-auto h-auto py-[16px] px-[24px] group-focus-within:visible">          
+          <div class="nav2-1 hover:underline hover:text-[#5e44ff] cursor-pointer px-6 py-4 ">            
+            Home      
+          </div>          
+          <div class="hover:underline hover:text-[#5e44ff] cursor-pointer px-6 py-4">Features</div>          
+          <div class="hover:underline hover:text-[#5e44ff] cursor-pointer px-6 py-4">Pricing</div>          
+          <div class="nav2-4">Contact</div>
+        </div> 
+        </div>
+        
+
+       <!--  <div class="md:hidden cursor-pointer group relative">
+          <div class="nav2 flex gap-[50px] w-auto h-auto py-[16px] px-[24px]">  
+                 
+            <p class="nav2-1 text-[16px] hidden lg:flex">            
+              <a href=""class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline">Home</a>          
+            </p>          
+            <p class="nav2-2 hidden lg:flex">Features</p>          
+            <p class="nav2-3 hidden lg:flex">Pricing</p>          
+            <p class="nav2-4 hidden lg:flex">Contact</p>
+          </div>        
+          </div>
+        </div> -->
+
+        
+        <!-- <div class="nav2 flex gap-[50px] w-auto h-auto py-[20px] ">
+          <div class="md:hidden group relative flex justify-end">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+              <div class="nav2-1 text-[16px] hidden md:flex lg:flex ">            
+                <a href=""class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline">Home</a>          
+              </div>          
+              <div class="nav2-2">Features</div>          
+              <div class="nav2-3">Pricing</div>          
+              <div class="nav2-4">Contact</div> 
+          </div>       -->     
+         <!--  <div class="nav2-1 text-[16px] hidden md:flex lg:flex ">            
+            <a href=""class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline">Home</a>          
+          </div>          
+          <div class="nav2-2">Features</div>          
+          <div class="nav2-3">Pricing</div>          
+          <div class="nav2-4">Contact</div>   -->      
+        <!-- </div> -->
+        
+
+       <!--  <div class="nav2 flex gap-[50px] w-auto h-auto py-[16px] px-[24px]">          
+          <div class="nav2-1 text-[16px] hidden lg:flex">            
+            <a href=""class="hover:text-[#5E44FF] hover:underline text-[#5E44FF] underline">Home</a>          
+          </div>          
+          <div class="nav2-2 hidden lg:flex">Features</div>          
+          <div class="nav2-3 hidden lg:flex">Pricing</div>          
+          <div class="nav2-4 hidden lg:flex">Contact</div>        
+        </div> -->
+
+      </nav>   
     </header>
 
     <section
       class="hero-section flex flex-col justify-center items-center text-center gap-[120px] w-auto h-auto mt-[128px]"
     >
-      <div class="flex flex-col items-center gap-[40px]">
+      <div class="md:flex flex-col w-[236px] h-[40px] md:items-center gap-[40px]">
         <div
           class="hero1 bg-[#563AFF1A] text-[16px] rounded-full px-[20px] py-[8px] text-[#5E44FF]"
         >
           Acme Productivity App
         </div>
-        <div class="hero2 gap-[24px] flex flex-col">
-          <h1 class="font-bold text-[80px] flex justify-center">
-            Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+        <div class="hero2 gap-[24px] md:flex flex-col justify-center items-center">
+          <h1 class="md:flex flex-row justify-center md:items-center font-bold text-[80px] ">
+            BoostYour <span class="text-[#5E44FF]">Product</span>ivity
           </h1>
-          <h2 class="text-[24px]">
+          <h2 class="text-[24px] md:text-center">
             Streamline your workflow with our aii-in-one productivity app.
           </h2>
         </div>
@@ -52,7 +105,8 @@
         </button>
       </div>
     </section>
-    <section class="flex justify-center items-center h-[600px] gap-[20px] ">
+
+    <!-- <section class="flex justify-center items-center h-[600px] gap-[20px] ">
       <div class="bg-[#D7E5F6;] rounded-3xl p-[28px] gap-[40px] w-[387px] h-[272px]">
         <div class= "flex justify-center items-center w-[60px] h-[60px] bg-white rounded-[16px]" >🚀</div>
       <div class="detil"></div>
@@ -102,6 +156,6 @@
         <li>AI Policy</li>
         <li>Pricing</li>
       </ul>
-    </footer>
+    </footer> -->
   </body> 
 </html>
